@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pragya kaa Kaam Kia Asaaan</title>
+</head>
+<body>
+    <h1>Always Remember, PRASHANT is Awesome</h1>
+    <br>
+    <h2>Upload ZIP File Containing CSVs</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="zipfile" accept=".zip" required>
+        <button type="submit">Upload</button>
+    </form>
+    {% if result %}
+        <div style="margin-top: 20px; padding: 10px; background-color: #f0f0f0;">
+            <strong>Result:</strong>
+            <p>{{ result }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
